@@ -24,7 +24,7 @@ Backend system for the Cal Poly Pomona Autonomous Vehicle project. This system h
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/AutoCPP_Backend.git
+git clone https://github.com/gokulsrinaths/AutoCPP_Backend.git
 cd AutoCPP_Backend
 ```
 
@@ -82,4 +82,4 @@ AutoCPP_Backend/
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
