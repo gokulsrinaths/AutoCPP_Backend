@@ -1,0 +1,16 @@
+gps_interface:
+  ros__parameters:
+    port: "COM3"  # Change this to your GPS port
+    baud_rate: 9600
+    update_rate: 10.0
+    
+    # Campus origin coordinates (update these for your campus)
+    origin_latitude: 34.0589  # Example coordinates
+    origin_longitude: -117.8194
+    
+    # UTM zone for your location
+    utm_zone: 10
+    
+    # Frame IDs
+    frame_id: "gps"
+    map_frame: "map" 

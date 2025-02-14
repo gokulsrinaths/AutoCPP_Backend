@@ -1,0 +1,37 @@
+vehicle_controller:
+  ros__parameters:
+    # Control loop parameters
+    control_frequency: 50.0  # Hz
+    
+    # Vehicle physical constraints
+    max_linear_velocity: 2.0  # m/s
+    max_angular_velocity: 1.0  # rad/s
+    max_linear_acceleration: 1.0  # m/s^2
+    max_angular_acceleration: 0.5  # rad/s^2
+    
+    # Vehicle dimensions
+    wheelbase: 1.2  # meters
+    track_width: 1.0  # meters
+    min_turning_radius: 3.0  # meters
+    
+    # Control gains
+    linear_p_gain: 1.0
+    linear_i_gain: 0.1
+    linear_d_gain: 0.1
+    angular_p_gain: 1.5
+    angular_i_gain: 0.1
+    angular_d_gain: 0.2
+    
+    # Path following parameters
+    lookahead_distance: 2.0  # meters
+    goal_tolerance_dist: 0.2  # meters
+    goal_tolerance_angle: 0.1  # radians
+    
+    # Safety parameters
+    emergency_stop_distance: 1.0  # meters
+    slow_down_distance: 3.0  # meters
+    obstacle_detection_radius: 5.0  # meters
+    
+    # Battery management
+    low_battery_threshold: 20.0  # percentage
+    critical_battery_threshold: 10.0  # percentage 

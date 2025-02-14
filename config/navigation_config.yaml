@@ -1,0 +1,36 @@
+path_planner:
+  ros__parameters:
+    # Map parameters
+    map_resolution: 0.1  # meters per cell
+    map_width: 1000  # cells
+    map_height: 1000  # cells
+    
+    # Planning parameters
+    planning_frequency: 10.0  # Hz
+    goal_tolerance: 0.5  # meters
+    path_safety_margin: 2.0  # meters (increased for camera-based detection)
+    
+    # A* parameters
+    heuristic_weight: 1.2
+    diagonal_movement: true
+    
+    # Campus-specific parameters
+    allowed_areas: ["roads", "paths", "parking_lots"]
+    restricted_areas: ["buildings", "construction_zones"]
+    
+    # Camera-based obstacle avoidance
+    min_obstacle_distance: 3.0  # meters
+    stop_distance: 2.0  # meters
+    slow_distance: 5.0  # meters
+    
+    # Dynamic replanning
+    replan_threshold: 2.0  # meters
+    obstacle_inflation_radius: 2.0  # meters (increased for safety)
+    
+    # GPS parameters
+    gps_timeout: 1.0  # seconds
+    position_uncertainty_threshold: 2.0  # meters
+    
+    # Visualization
+    publish_planning_visualization: true
+    visualization_update_rate: 2.0  # Hz 
